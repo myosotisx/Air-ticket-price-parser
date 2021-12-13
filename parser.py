@@ -19,12 +19,9 @@ query_interval = 300 # sec
 
 url_template = "https://flight.qunar.com/site/roundtrip_list_new.htm?fromCity=%s&toCity=%s&fromDate=%s&toDate=%s&fromCode=SHA&toCode=HAK&from=qunarindex&lowestPrice=null#/"
 
-
-profile_path = r"C:\Users\Myosotis\AppData\Roaming\Mozilla\Firefox\Profiles\3r9n06uz.default-release"
 options = Options()
-options.set_preference("profile", profile_path)
 options.add_argument("--headless")
-service = Service(r"C:\Users\Myosotis\Desktop\air_tickets\geckodriver.exe")
+service = Service("./geckodriver.exe")
 
 browser = Firefox(service=service, options=options)
 
