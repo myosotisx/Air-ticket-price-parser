@@ -21,6 +21,7 @@ Parser for air tickets' price
 
 - Set filter
     - Currently `not transfer` for Go, `not transfer and arrival time between 07:00 and 17:00` for Back
+    - To be updated...
 
 - Run 
     ```shell
@@ -28,4 +29,4 @@ Parser for air tickets' price
     ```
 
 - Want to test if email send is functional?
-    - Set `notification_threshold` to a large value and run to see if you can receive
+    - Set `notification_threshold` to a large value and run to see if you can receive emails
